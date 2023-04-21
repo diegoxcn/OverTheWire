@@ -45,7 +45,8 @@
 16 -> 17:  nmap -sT -p 31000-32000 127.0.0.1
            for i in {31046,31518,31691,31790,31960}; do openssl s_client -connect 127.0.0.1:$i; done;
            openssl s_client -connect 127.0.0.1:31790
-17 -> 18:  
+17 -> 18:  diff passwords.new passwords.old
+18 -> 19:  
 
 
 
