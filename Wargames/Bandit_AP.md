@@ -46,7 +46,11 @@
            for i in {31046,31518,31691,31790,31960}; do openssl s_client -connect 127.0.0.1:$i; done;
            openssl s_client -connect 127.0.0.1:31790
 17 -> 18:  diff passwords.new passwords.old
-18 -> 19:  
+18 -> 19:  ssh bandit18@bandit.labs.overthewire.org -p 2220 'cat readme'
+19 -> 20:  ./bandit20-do id
+           ls -al /etc/bandit_pass
+           ./bandit20-do cat /etc/bandit_pass/bandit20
+20 -> 21:  
 
 
 
