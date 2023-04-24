@@ -50,7 +50,18 @@
 19 -> 20:  ./bandit20-do id
            ls -al /etc/bandit_pass
            ./bandit20-do cat /etc/bandit_pass/bandit20
-20 -> 21:  
+20 -> 21:  echo 'VxCazJaVykI6W36BkBU0mJTCM8rR95XT' | nc -lp 4444 &
+           ./suconnect 4444
+21 -> 22:  ls -al /etc/cron.d
+           cat /etc/cron.d/cronjob_bandit22
+           cat /usr/bin/cronjob_bandit22.sh
+           cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+22 -> 23:  ls -al /etc/cron.d
+           cat /etc/cron.d/cronjob_bandit23
+           cat /usr/bin/cronjob_bandit23.sh
+           echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+           cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+23 -> 24:  
 
 
 
